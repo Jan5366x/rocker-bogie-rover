@@ -1,8 +1,9 @@
 # Rocker Bogie Rover
 
-Self designed and 3D Printed [Rocker Bogie](https://en.wikipedia.org/wiki/Rocker-bogie) rover.
+Self designed and 3D printed [Rocker Bogie](https://en.wikipedia.org/wiki/Rocker-bogie) rover.
 
-Early basic research to avoid frying all the electronics:
+## Current State
+Early basic research to avoid frying all the electronics and wheel prototyping
 ![](/documentation/images/Week2.jpg)
 
 
