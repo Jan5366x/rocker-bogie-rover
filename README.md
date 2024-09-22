@@ -1,18 +1,9 @@
 # Rocker Bogie Rover
-
 Self designed and 3D printed [Rocker Bogie](https://en.wikipedia.org/wiki/Rocker-bogie) rover.
-
-#### Disclaimer
-- This is a side project and might take a long time to finish
-- I have no previous experience in low voltage electronics other than flashing an LED,
-  so I have a lot to learn for this project
-- I will share my code and 3D models, but I might not provide complete build instructions
-  or detailed videos due to time constraints
 
 ## Current State
 Early basic research to avoid frying all the electronics and wheel prototyping
 ![](/documentation/images/Week2.jpg)
-
 
 ### Hardware List - WIP
 - 1x Raspberry Pi 4B 8GB
@@ -49,3 +40,10 @@ Early basic research to avoid frying all the electronics and wheel prototyping
 #### WildWillyRobots ~ Stair Climbing Rover
 - https://www.youtube.com/@wildwillyrobots
 - https://www.printables.com/model/194299-stair-climbing-rover
+
+### Disclaimer
+- This is a side project and might take a long time to finish
+- I have no previous experience in low voltage electronics other than flashing an LED,
+  so I have a lot to learn for this project
+- I will share my code and 3D models, but I might not provide complete build instructions
+  or detailed videos due to time constraints
