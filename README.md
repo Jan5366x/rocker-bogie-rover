@@ -1,9 +1,10 @@
+![](/documentation/images/Week2.jpg)
+
 # Rocker Bogie Rover
 Self designed and 3D printed [Rocker Bogie](https://en.wikipedia.org/wiki/Rocker-bogie) rover.
 
 ## Current State
 Early basic research to avoid frying all the electronics and wheel prototyping
-![](/documentation/images/Week2.jpg)
 
 ### Hardware List - WIP
 - 1x Raspberry Pi 4B 8GB
