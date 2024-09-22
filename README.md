@@ -36,6 +36,13 @@ Early basic research to avoid frying all the electronics and wheel prototyping
 - Grafana
 - Prometheus
 
+### 3D Printer
+- Prusa MK4
+  - 0.4 nozzle
+  - PETG for structure parts
+  - TPU for flex parts
+  - Satin Powder-coated Steel Sheet
+
 ### Hardware design is heavily inspired by:
 
 #### WildWillyRobots ~ Stair Climbing Rover
