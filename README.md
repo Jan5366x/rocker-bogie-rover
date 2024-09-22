@@ -1,9 +1,12 @@
 # Rocker Bogie Rover
 
+Self designed and 3D Printed [Rocker Bogie](https://en.wikipedia.org/wiki/Rocker-bogie) rover.
+
 Early basic research to avoid frying all the electronics:
 ![](/documentation/images/Week2.jpg)
 
-### Hardware List
+
+### Hardware List - WIP
 - 1x Raspberry Pi 4B 8GB
 - 1x Raspberry Pi Camera module
 - 1x Arduino Nano V3 (clone)
@@ -18,10 +21,23 @@ Early basic research to avoid frying all the electronics:
 - 1x PCA9685PW 16 Channel 12-Bit PWM Servo Shield Driver I2C Interface
 - Range of M3 screws and nuts
 - Different sizes of wires
+- Makita 12V battery
 - ...
 
-### Hardware design inspired by:
+### Software used - WIP/planned
+- Fusion 360
+- Affinity Designer 2
+- Fritzing
+- Prusa Slicer
+- JetBrains IDEs
+- Arduino IDE
+- Obsidian
+- Notepad++
+- Grafana
+- Prometheus
 
-#### WildWillyRobots
+### Hardware design is heavily inspired by:
+
+#### WildWillyRobots ~ Stair Climbing Rover
 - https://www.youtube.com/@wildwillyrobots
 - https://www.printables.com/model/194299-stair-climbing-rover
