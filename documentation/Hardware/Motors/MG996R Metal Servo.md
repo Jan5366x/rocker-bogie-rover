@@ -1,0 +1,1 @@
+I use the [[Servo]] [[Motor]] version with 180° rotation and 5KG
