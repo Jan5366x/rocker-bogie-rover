@@ -1,4 +1,4 @@
-![](/documentation/images/Week2.jpg)
+![](/documentation/Images/Week2.jpg)
 
 # Rocker Bogie Rover
 Self designed and 3D printed [Rocker Bogie](https://en.wikipedia.org/wiki/Rocker-bogie) rover.
