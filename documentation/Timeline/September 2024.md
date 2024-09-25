@@ -1,3 +1,5 @@
+
+# Week 1
 ### Project start
 - Ordering parts and creation of many raw sketches on paper
 - I ordered the wrong motors ([[JGA25-370]] instead of [[JGA25-370 with Encoder]]) so I have to add [[LM393 IR Speed Sensor]]s to be able to control the motor speed properly
@@ -5,8 +7,10 @@
 ### Wheel prototyping
 - Selected materials are [[PETG]] for the wheel core and [[TPU]] for the flexible part
 - Based the overall size on motor dimensions
-- Testing how strong the printed prototype is -> no flex no problems
-- I noticed that the spacing for the speed encoder was not correct -> 1 mm adjustment to add space for the walls of the sensor enclosure
+- Testing how strong the printed [[PETG]] prototype is → no flex no problems
+- I noticed that the spacing for the speed encoder was not correct → 1 mm adjustment to add space for the walls of the sensor enclosure
+
+# Week 2
 
 ### Basic research
 - Early basic research to avoid frying all the electronics ...
@@ -17,9 +21,23 @@
 
 ![](/Images/Week2.jpg)
 
-### Wheel Mount Structure
+### Wheel mount structure
 - The design is more difficult than expected since the sensor mount adds a lot of 3d complexities, and I'm still a beginner in [[Fusion 360]]
-  
+
+# Week 3
+
+### Print of [[TPU]] wheel parts 
+
+After some more tests, I have decided to go forward with the current design.
+Sure, there are still some improvements possible in regard to material flex and performance on flat surfaces,
+but it should be good enough for my use cases.
+
+![](Week3_Rover_TPU_Print.jpg)
+
+### Wheel Mount Structure
+I have moved my workflow back to paper sketches to solve some persisting design problems.
+
+
 ...
   
 
