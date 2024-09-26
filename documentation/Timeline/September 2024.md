@@ -38,6 +38,14 @@ but it should be good enough for my use cases.
 I have moved my workflow back to paper sketches to solve some persisting design problems.
 
 
+### Motor Driver
+
+I have learned that [[TB6612FNG]] motor drivers could be a better choice than the [[L298N]] motor driver.
+[[TB6612FNG]] is way smaller and produces less heat, which also means a much higher efficiency and battery lifetime.
+
+I will stick to the [[L298N]] for now since I already own them, but I might switch them out for the final design or
+at least create a modular design to replace them later on.
+
 ...
   
 
