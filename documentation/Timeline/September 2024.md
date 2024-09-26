@@ -46,7 +46,7 @@ I have learned that [[TB6612FNG]] motor drivers could be a better choice than th
 I will stick to the [[L298N]] for now since I already own them, but I might switch them out for the final design or
 at least create a modular design to replace them later on.
 
-I also learned (but not tested yet) that L298N [[L298N]] leads to a major voltage drop which might require changing
+I also learned (but not tested yet) that the [[L298N]] leads to a major voltage drop which might require changing
 the buck converter output from 6 V to around 7 V.
 
 ...
