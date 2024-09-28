@@ -59,5 +59,19 @@ https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_c
 
 $u(t)=K_{p}e(t) + K_{i} \int\limits_0^t e(\tau) d\tau  + K_{d} \frac{de(t)}{dt}$
 
+### Servo gears
+
+I Needed some attempts to get the size to be correct because of the complex shape of the servo mount.
+
+The black one is from [wildwillyrobots](https://www.printables.com/model/194299-stair-climbing-rover),
+so my rover is a little bit larger, I guess.
+
+![](../Images/Week3_GearDesignTest.jpg)
+_(The gear teeth are just placeholders right now)_
+
+Since my servos are huge, I still keep the option open to rotate the gear/servo assembly by 180°
+to have the gears between the wheel and the rocker bogie elements instead on top.
+But in this case, the design would require some kind of dirt protection to avoid gear problems.
+
   
 
