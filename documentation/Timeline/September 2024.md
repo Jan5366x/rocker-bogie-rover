@@ -73,5 +73,16 @@ Since my servos are huge, I still keep the option open to rotate the gear/servo 
 to have the gears between the wheel and the rocker bogie elements instead on top.
 But in this case, the design would require some kind of dirt protection to avoid gear problems.
 
+#### Spur Gear
+
+- Fusion 360 Spur gear add-on script
+- Pressure angle: 20°
+- Module: 1.2
+- Number of teeth: 32
+- Root fill dia: 0.7
+- Hole dia: 0 mm
+- Gear thickness: 8 mm
+- Backslash: 0 mm
+
   
 
