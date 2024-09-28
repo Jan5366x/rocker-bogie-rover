@@ -57,6 +57,7 @@ For the motor control, I plan to write a Proportional–integral–derivative co
 
 https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_controller
 
-...
+$u(t)=K_{p}e(t) + K_{i} \int\limits_0^t e(\tau) d\tau  + K_{d} \frac{de(t)}{dt}$
+
   
 
