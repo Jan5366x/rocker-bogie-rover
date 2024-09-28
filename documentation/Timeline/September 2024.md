@@ -53,7 +53,7 @@ the buck converter output from 6 V to around 7 V.
 
 ### Motor Control
 
-For the motor control I plan to write a Proportional–integral–derivative controller to make sure that the individual motors perform as expected.
+For the motor control, I plan to write a Proportional–integral–derivative controller to make sure that the individual motors perform as expected.
 
 https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_controller
 
