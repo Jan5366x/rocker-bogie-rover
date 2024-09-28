@@ -43,11 +43,19 @@ I have moved my workflow back to paper sketches to solve some persisting design 
 I have learned that [[TB6612FNG]] motor drivers could be a better choice than the [[L298N]] motor driver.
 [[TB6612FNG]] is way smaller and produces less heat, which also means a much higher efficiency and battery lifetime.
 
+https://www.youtube.com/watch?v=JPPTRj0KWbg
+
 I will stick to the [[L298N]] for now since I already own them, but I might switch them out for the final design or
 at least create a modular design to replace them later on.
 
 I also learned (but not tested yet) that the [[L298N]] leads to a major voltage drop which might require changing
 the buck converter output from 6 V to around 7 V.
+
+### Motor Control
+
+For the motor control I plan to write a Proportional–integral–derivative controller to make sure that the individual motors perform as expected.
+
+https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_controller
 
 ...
   
