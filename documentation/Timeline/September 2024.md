@@ -73,7 +73,10 @@ Since my servos are huge, I still keep the option open to rotate the gear/servo 
 to have the gears between the wheel and the rocker bogie elements instead on top.
 But in this case, the design would require some kind of dirt protection to avoid gear problems.
 
-#### Spur Gear
+-> Yes, I will design it up-side-dow
+
+##### Final spur gear teeth layout
+![](../Images/Week3_GearDesign.jpg)
 
 - Fusion 360 Spur gear add-on script
 - Pressure angle: 20°
