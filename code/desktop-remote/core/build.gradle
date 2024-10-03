@@ -1,0 +1,17 @@
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+}
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+sourceSets.main.java.srcDirs = [ "src/main" ]
+sourceSets.test.java.srcDirs = [ "src/main", "src/test" ]
+
+eclipse.project.name = appName + "-core"
+
+
+tasks.withType(JavaCompile).configureEach {
+    doFirst {
+        println "AnnotationProcessorPath for $name is ${options.getAnnotationProcessorPath().getFiles()}"
+    }
+}

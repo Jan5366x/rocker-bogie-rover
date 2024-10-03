@@ -1,0 +1,108 @@
+buildscript {
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        google()
+    }
+
+    dependencies {
+        classpath "gradle.plugin.org.inferred:gradle-processors:3.7.0"
+    }
+}
+
+allprojects {
+    apply plugin: "eclipse"
+
+    version = '1.0'
+    ext {
+        appName = "Cendesia"
+        gdxVersion = '1.12.1'
+        roboVMVersion = '2.3.19'
+        box2DLightsVersion = '1.5'
+        ashleyVersion = '1.7.4'
+        aiVersion = '1.8.2'
+        gdxControllersVersion = '2.2.1'
+        log4jVersion = '2.21.1'
+        visuiVersion = '1.5.3'
+        lombokVersion = '1.18.30'
+        jsonSimpleVersion = '1.1.1'
+        byteBuddyVersion = '1.14.9'
+        junitVersion = '5.10.1'
+        autovalueVersion = '1.6.6'
+        autofactoryVersion = '1.0-beta6'
+        autoerviceVersion = '1.0-rc6'
+        guiceVersion = '4.2.0'
+        jacksonVersion = '2.15.2'
+        classPathVersion = '4.8.162'
+        nettyVersion = '4.1.101.Final'
+        kryoVersion = '5.5.0'
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        google()
+        gradlePluginPortal()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+        maven { url "https://jitpack.io" }
+    }
+}
+
+project(":desktop") {
+    apply plugin: "java-library"
+
+    dependencies {
+        implementation project(":core")
+        api "org.apache.logging.log4j:log4j-api:$log4jVersion"
+        api "org.apache.logging.log4j:log4j-core:$log4jVersion"
+        api "org.apache.logging.log4j:log4j-slf4j-impl:$log4jVersion"
+        api "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
+        api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+        api "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
+    }
+}
+
+project(":core") {
+    apply plugin: "java-library"
+
+    compileJava {
+        sourceCompatibility = 21
+        targetCompatibility = 21
+    }
+
+    dependencies {
+        api "com.googlecode.json-simple:json-simple:$jsonSimpleVersion"
+
+        api "org.apache.logging.log4j:log4j-api:$log4jVersion"
+        api "org.apache.logging.log4j:log4j-core:$log4jVersion"
+        api "org.apache.logging.log4j:log4j-slf4j-impl:$log4jVersion"
+
+        api "com.badlogicgames.gdx:gdx:$gdxVersion"
+        api "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
+        api "com.kotcrab.vis:vis-ui:$visuiVersion"
+        compileOnly "org.projectlombok:lombok:$lombokVersion"
+        testCompileOnly "org.projectlombok:lombok:$lombokVersion"
+        testAnnotationProcessor "org.projectlombok:lombok:$lombokVersion"
+
+        testImplementation(platform("org.junit:junit-bom:$junitVersion"))
+        testImplementation("org.junit.jupiter:junit-jupiter:$junitVersion")
+
+        implementation "io.netty:netty-all:$nettyVersion"
+
+
+        api "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
+        api "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
+        api "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:$jacksonVersion"
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}

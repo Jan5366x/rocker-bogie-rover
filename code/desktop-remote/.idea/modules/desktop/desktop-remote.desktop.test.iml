@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":desktop:test" external.linked.project.path="$MODULE_DIR$/../../../desktop" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="desktop-remote" external.system.module.type="sourceSet" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output-test url="file://$MODULE_DIR$/../../../desktop/build/classes/java/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../desktop/src/test" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="desktop-remote.desktop.main" />
+    <orderEntry type="module" module-name="desktop-remote.core.main" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-core:2.21.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-slf4j-impl:2.21.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-api:2.21.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-backend-lwjgl3:1.12.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-platform:natives-desktop:1.12.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-freetype-platform:natives-desktop:1.12.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-freetype:1.12.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.kotcrab.vis:vis-ui:1.5.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx:1.12.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.googlecode.json-simple:json-simple:1.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.15.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.15.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.15.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-glfw:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-glfw:natives-linux:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-glfw:natives-linux-arm32:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-glfw:natives-linux-arm64:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-glfw:natives-macos:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-glfw:natives-macos-arm64:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-glfw:natives-windows:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-glfw:natives-windows-x86:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-jemalloc:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-jemalloc:natives-linux:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-jemalloc:natives-linux-arm32:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-jemalloc:natives-linux-arm64:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-jemalloc:natives-macos:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-jemalloc:natives-macos-arm64:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-jemalloc:natives-windows:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-jemalloc:natives-windows-x86:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-openal:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-openal:natives-linux:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-openal:natives-linux-arm32:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-openal:natives-linux-arm64:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-openal:natives-macos:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-openal:natives-macos-arm64:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-openal:natives-windows:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-openal:natives-windows-x86:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-opengl:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-opengl:natives-linux:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-opengl:natives-linux-arm32:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-opengl:natives-linux-arm64:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-opengl:natives-macos:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-opengl:natives-macos-arm64:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-opengl:natives-windows:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-opengl:natives-windows-x86:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-stb:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-stb:natives-linux:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-stb:natives-linux-arm32:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-stb:natives-linux-arm64:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-stb:natives-macos:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-stb:natives-macos-arm64:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-stb:natives-windows:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-stb:natives-windows-x86:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl:natives-linux:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl:natives-linux-arm32:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl:natives-linux-arm64:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl:natives-macos:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl:natives-macos-arm64:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl:natives-windows:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl:natives-windows-x86:3.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.jlayer:jlayer:1.0.1-gdx" level="project" />
+    <orderEntry type="library" name="Gradle: org.jcraft:jorbis:0.0.17" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-jnigen-loader:2.3.1" level="project" />
+    <orderEntry type="library" name="Gradle: junit:junit:4.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.yaml:snakeyaml:2.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.15.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-all:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-native-epoll:linux-aarch_64:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-native-epoll:linux-x86_64:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-native-kqueue:osx-aarch_64:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-native-kqueue:osx-x86_64:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-classes-epoll:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-classes-kqueue:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-resolver-dns-native-macos:osx-aarch_64:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-resolver-dns-native-macos:osx-x86_64:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-resolver-dns-classes-macos:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-resolver-dns:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-handler:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-native-unix-common:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-codec-dns:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-codec:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-buffer:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-codec-haproxy:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-codec-http:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-codec-http2:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-codec-memcache:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-codec-mqtt:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-codec-redis:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-codec-smtp:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-codec-socks:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-codec-stomp:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-codec-xml:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-resolver:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-common:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-handler-proxy:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-handler-ssl-ocsp:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-rxtx:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-sctp:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-udt:4.1.101.Final" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="desktop-remote.desktop.main" />
+</module>
