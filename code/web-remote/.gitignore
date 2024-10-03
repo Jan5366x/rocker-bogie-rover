@@ -1,0 +1,6 @@
+/node_modules
+/build
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/web-remote.iml
+/.idea/

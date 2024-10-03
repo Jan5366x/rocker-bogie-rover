@@ -1,0 +1,11 @@
+.rounded-corners {
+    border-radius: 8px;
+}
+
+.hover-zoom {
+    transition: all 0.2s linear;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.1);
+}
