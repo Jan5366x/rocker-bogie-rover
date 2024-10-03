@@ -23,7 +23,7 @@ _More details: [Current Timeline Entry](/documentation/Timeline/October%202024.m
 - 3x Dual H Bridge DC Stepper Motor Drive Controller Board Module L298N
 - 1x PCA9685PW 16 Channel 12-Bit PWM Servo Shield Driver I2C Interface
 - Range screws and nuts (WIP)
-  - 12x M3 low flat head screws
+  - 12x M3 6mm low flat head screws
   - 12x M3 hex nuts
   - ...
 - Different sizes of wires
