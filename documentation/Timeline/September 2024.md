@@ -5,7 +5,7 @@
 - I ordered the wrong motors ([[JGA25-370]] instead of [[JGA25-370 with Encoder]]) so I have to add [[LM393 IR Speed Sensor]]s to be able to control the motor speed properly
 
 ### Wheel prototyping
-- Selected materials are [[PETG]] for the wheel core and [[TPU]] for the flexible part
+- Selected materials are [[PETG]] for the wheel core and [[TPU]] for the flexible tire part
 - Based the overall size on motor dimensions
 - Testing how strong the printed [[PETG]] prototype is → no flex no problems
 - I noticed that the spacing for the speed encoder was not correct → 1 mm adjustment to add space for the walls of the sensor enclosure
@@ -26,7 +26,7 @@
 
 # Week 3
 
-### Print of [[TPU]] wheel parts 
+### Print of [[TPU]] tire
 
 After some more tests, I have decided to go forward with the current design.
 Sure, there are still some improvements possible in regard to material flex and performance on flat surfaces,
