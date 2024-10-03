@@ -8,4 +8,9 @@ updates:
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/code/web-remote/" # Location of package manifests
     schedule:
-      interval: "monthly"
+      interval: "weekly"
+  - package-ecosystem: "gradle" # See documentation for possible values
+    directory: "/code/raspberry-pi/java/RoverControl/" # Location of package manifests
+    schedule:
+      interval: "weekly"
+
