@@ -73,7 +73,7 @@ Since my servos are huge, I still keep the option open to rotate the gear/servo 
 to have the gears between the wheel and the rocker bogie elements instead on top.
 But in this case, the design would require some kind of dirt protection to avoid gear problems.
 
--> Yes, I will design it up-side-dow
+-> Yes, I will design it up-side-down
 
 ##### Final spur gear teeth layout
 ![](../Images/Week3_GearDesign.jpg)
@@ -87,5 +87,5 @@ But in this case, the design would require some kind of dirt protection to avoid
 - Gear thickness: 8 mm
 - Backslash: 0 mm
 
-  
+# Next:  [[October 2024]]
 
