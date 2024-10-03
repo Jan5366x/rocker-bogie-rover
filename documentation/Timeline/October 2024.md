@@ -6,7 +6,9 @@ Yes, this is a week counter not the week of the month :D
 
 ### Wheels
 
-Print of 6 x 8 hour [[TPU]] flex tire parts will finish 3rd Oct.
+Print of 6 x 8 hour [[TPU]] flex tire parts is finish 3rd Oct.
+![](../Images/Week4_Tire.jpg)
+
 
 #### Smart Home
 
