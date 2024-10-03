@@ -6,11 +6,14 @@
 version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/code/web-remote/" # Location of package manifests
+    directory: "/software/web-remote/" # Location of package manifests
     schedule:
       interval: "weekly"
   - package-ecosystem: "gradle" # See documentation for possible values
-    directory: "/code/raspberry-pi/java/RoverControl/" # Location of package manifests
+    directory: "/software/raspberry-pi/java/RoverControl/" # Location of package manifests
     schedule:
       interval: "weekly"
-
+  - package-ecosystem: "gradle" # See documentation for possible values
+    directory: "/software/desktop-remote" # Location of package manifests
+    schedule:
+      interval: "weekly"
