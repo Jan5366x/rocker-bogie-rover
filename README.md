@@ -7,7 +7,7 @@ Self designed and 3D printed [Rocker Bogie](https://en.wikipedia.org/wiki/Rocker
 
 3D Design of Wheel mounts & 3D Print of tires
 
-_More details: [Timeline](/documentation/Timeline.md)_
+_More details: [Current Timeline Entry](/documentation/Timeline/October%202024.md)_
 
 ### Hardware List - WIP
 - 1x Raspberry Pi 4B 8GB
