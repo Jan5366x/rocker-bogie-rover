@@ -18,3 +18,6 @@ I added my [[Prusa MK4]] to the smart home to get a better overview about the cu
 
 #### Wheel Core
 Last checks and measurements for the [[PETG]] wheel core before print start are concluded.
+
+The M3 low flat head screws which are required for mounting the wheel to the motor flange coupling are expected
+to arrive ~ 15th Oct.
