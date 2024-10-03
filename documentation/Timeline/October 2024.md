@@ -23,3 +23,7 @@ Last checks and measurements for the [[PETG]] wheel core before print start are 
 
 The M3 low flat head screws which are required for mounting the wheel to the motor flange coupling are expected
 to arrive ~ 15th Oct.
+
+#### Wheel mount
+
+![](../Images/Week4_Wheel_Mount.jpg)
