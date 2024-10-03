@@ -46,6 +46,10 @@ _More details: [Current Timeline Entry](/documentation/Timeline/October%202024.m
   - TPU for flex parts
   - Satin Powder-coated Steel Sheet
 
+#### Project on printables
+
+https://www.printables.com/model/1026909-rocker-bogie-rover-wip
+
 ### Hardware design is heavily inspired by:
 
 #### WildWillyRobots ~ Stair Climbing Rover
