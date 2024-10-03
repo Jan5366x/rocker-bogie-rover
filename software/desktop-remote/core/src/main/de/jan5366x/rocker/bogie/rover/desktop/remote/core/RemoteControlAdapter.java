@@ -1,4 +1,4 @@
-package de.cendesia.core;
+package de.jan5366x.rocker.bogie.rover.desktop.remote.core;
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
@@ -6,7 +6,7 @@ import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.utils.ScreenUtils;
 
 
-import de.cendesia.shared.screen.MainScreen;
+import de.jan5366x.rocker.bogie.rover.desktop.remote.shared.screen.MainScreen;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

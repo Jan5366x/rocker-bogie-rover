@@ -1,4 +1,4 @@
-package de.cendesia.shared.screen;
+package de.jan5366x.rocker.bogie.rover.desktop.remote.shared.screen;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputMultiplexer;
