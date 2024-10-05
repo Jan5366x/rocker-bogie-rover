@@ -27,3 +27,7 @@ to arrive ~ 15th Oct.
 #### Wheel mount
 
 ![](../Images/Week4_Wheel_Mount.jpg)
+
+This version was very difficult to print and also directly broke in two pieces, so I made further adjustments:
+
+![](../Images/Week4_Animation.gif)
