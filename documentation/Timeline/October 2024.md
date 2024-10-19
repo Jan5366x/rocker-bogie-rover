@@ -31,3 +31,15 @@ to arrive ~ 15th Oct.
 This version was very difficult to print and also directly broke in two pieces, so I made further adjustments:
 
 ![](../Images/Week4_Animation.gif)
+
+# Week 5
+
+private stuff - no progress at all ;-)
+
+# Week 6
+
+#### 3D Printing & Design
+
+All prepared parts are now printed so I continue to design the [[CAD]] for the [[Rover]] in [[Fusion 360.
+
+![](../Images/Week6_3d_printing.jpg)
