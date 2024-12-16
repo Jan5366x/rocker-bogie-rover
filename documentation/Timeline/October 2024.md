@@ -40,6 +40,6 @@ private stuff - no progress at all ;-)
 
 #### 3D Printing & Design
 
-All prepared parts are now printed so I continue to design the [[CAD]] for the [[Rover]] in [[Fusion 360.
+All prepared parts are now printed so I continue to design the [[CAD]] for the [[Rover]] in [[Fusion 360]].
 
 ![](../Images/Week6_3d_printing.jpg)
