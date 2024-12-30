@@ -17,7 +17,7 @@
     "luxon": "^3.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.26.1",
+    "react-router-dom": "^7.1.1",
     "zustand": "^5.0.0"
   },
   "devDependencies": {
