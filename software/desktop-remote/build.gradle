@@ -40,7 +40,7 @@ allprojects {
         guiceVersion = '4.2.0'
         jacksonVersion = '2.18.2'
         classPathVersion = '4.8.162'
-        nettyVersion = '4.1.115.Final'
+        nettyVersion = '4.1.117.Final'
         kryoVersion = '5.5.0'
     }
 
