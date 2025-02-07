@@ -11,10 +11,12 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
+import de.jan5366x.rocker.bogie.rover.desktop.remote.core.RoverMath;
 import de.jan5366x.rocker.bogie.rover.desktop.remote.shared.Box;
 import lombok.Getter;
 import org.apache.logging.log4j.LogManager;
@@ -36,13 +38,10 @@ public class MainScreen implements InputProcessor, Screen {
     private Texture background;
     private final OrthographicCamera camera;
     private final ShapeRenderer shapeRenderer;
-
     private final InputMultiplexer inputMultiplexer = new InputMultiplexer();
-
     private final ArrayList<Box> boxes = new ArrayList<>();
 
     public MainScreen() {
-
         viewport = new ScreenViewport();
         stage = new Stage(viewport);
         skin = new Skin(Gdx.files.internal("ui/game-ui.json"));
@@ -83,7 +82,6 @@ public class MainScreen implements InputProcessor, Screen {
         inputMultiplexer.addProcessor(this);
         Gdx.input.setInputProcessor(inputMultiplexer);
 
-
         // Test boxes
         boxes.add(new Box(100.0F, 100.0F, 30.0F, 60.0F, -30.0F, Color.CYAN));
         boxes.add(new Box(100.0F, 250.0F, 30.0F, 60.0F, 0.0F, Color.CYAN));
@@ -106,20 +104,34 @@ public class MainScreen implements InputProcessor, Screen {
         font.draw(batch, Gdx.graphics.getFramesPerSecond() + " FPS; Delta " + delta * 1000 + "ms", 0, viewport.getScreenHeight());
         batch.end();
 
+        Vector2 p1 = new Vector2(110, 100);
+        Vector2 p2 = new Vector2(120, 250);
+        Vector2 p3 = new Vector2( 110, 400);
+
+        var c1 = RoverMath.circleFromThreePoints(p1, p2, p3);
+
+        Vector2 p4 = new Vector2(110 + 250, 100);
+        Vector2 p5 = new Vector2(120 + 250, 250);
+        Vector2 p6 = new Vector2( 110 + 250, 400);
+
+        var c2 = RoverMath.circleFromThreePoints(p4, p5, p6);
+
+        shapeRenderer.begin(ShapeRenderer.ShapeType.Line);
+        shapeRenderer.setColor(Color.GRAY);
+        shapeRenderer.circle(c1.a().x, c1.a().y, c1.b());
+        shapeRenderer.circle(c2.a().x, c2.a().y, c2.b());
+        shapeRenderer.end();
+
         for (Box box : boxes) {
-            shapeRenderer.begin(ShapeRenderer.ShapeType.Line);
+            shapeRenderer.begin(ShapeRenderer.ShapeType.Filled);
             shapeRenderer.setColor(box.color());
             // public void rect(float x, float y, float originX, float originY, float width, float height, float scaleX, float scaleY, float degrees) {
             shapeRenderer.rect(box.x(), box.y(), box.width() / 2.0F, box.height() / 2.0F, box.width(), box.height(), 1.0F, 1.0F, box.rotation());
             shapeRenderer.end();
         }
 
-
         stage.act();
         stage.draw();
-
-
-
     }
 
     private void createBackground() {
