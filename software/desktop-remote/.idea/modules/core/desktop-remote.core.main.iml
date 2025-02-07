@@ -10,55 +10,56 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: com.googlecode.json-simple:json-simple:1.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-core:2.21.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-slf4j-impl:2.21.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-api:2.21.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-freetype:1.12.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.kotcrab.vis:vis-ui:1.5.3" level="project" />
-    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx:1.12.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.15.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.15.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.15.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.projectlombok:lombok:1.18.30" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-all:4.1.101.Final" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-core:2.24.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-slf4j-impl:2.24.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-api:2.24.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-freetype:1.13.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx:1.13.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.kotcrab.vis:vis-ui:1.5.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.18.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.18.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.18.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.projectlombok:lombok:1.18.36" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-all:4.1.117.Final" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.10" level="project" />
-    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.25" level="project" />
-    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-jnigen-loader:2.3.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.yaml:snakeyaml:2.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.15.2" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-buffer:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-codec:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-codec-dns:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-codec-haproxy:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-codec-http:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-codec-http2:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-codec-memcache:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-codec-mqtt:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-codec-redis:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-codec-smtp:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-codec-socks:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-codec-stomp:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-codec-xml:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-common:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-handler:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-transport-native-unix-common:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-handler-proxy:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-handler-ssl-ocsp:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-resolver:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-resolver-dns:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-transport:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-transport-rxtx:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-transport-sctp:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-transport-udt:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-transport-classes-epoll:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-transport-classes-kqueue:4.1.101.Final" level="project" />
-    <orderEntry type="library" name="Gradle: io.netty:netty-resolver-dns-classes-macos:4.1.101.Final" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.36" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-jnigen-loader:2.5.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.yaml:snakeyaml:2.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.18.2" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-buffer:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec-dns:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec-haproxy:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec-http:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec-http2:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec-memcache:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec-mqtt:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec-redis:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec-smtp:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec-socks:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec-stomp:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec-xml:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-common:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-handler:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-transport-native-unix-common:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-handler-proxy:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-handler-ssl-ocsp:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-resolver:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-resolver-dns:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-transport:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-transport-rxtx:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-transport-sctp:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-transport-udt:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-transport-classes-epoll:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-transport-classes-kqueue:4.1.117.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-resolver-dns-classes-macos:4.1.117.Final" level="project" />
     <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.1" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-native-epoll:linux-aarch_64:4.1.101.Final" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-native-epoll:linux-x86_64:4.1.101.Final" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-native-kqueue:osx-aarch_64:4.1.101.Final" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-native-kqueue:osx-x86_64:4.1.101.Final" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-resolver-dns-native-macos:osx-aarch_64:4.1.101.Final" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-resolver-dns-native-macos:osx-x86_64:4.1.101.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-native-epoll:linux-aarch_64:4.1.117.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-native-epoll:linux-riscv64:4.1.117.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-native-epoll:linux-x86_64:4.1.117.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-native-kqueue:osx-aarch_64:4.1.117.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-native-kqueue:osx-x86_64:4.1.117.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-resolver-dns-native-macos:osx-aarch_64:4.1.117.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-resolver-dns-native-macos:osx-x86_64:4.1.117.Final" level="project" />
   </component>
 </module>
