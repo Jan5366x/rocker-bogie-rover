@@ -23,7 +23,7 @@ allprojects {
     ext {
         appName = "Cendesia"
         gdxVersion = '1.13.1'
-        roboVMVersion = '2.3.19'
+        roboVMVersion = '2.3.22'
         box2DLightsVersion = '1.5'
         ashleyVersion = '1.7.4'
         aiVersion = '1.8.2'
@@ -41,7 +41,7 @@ allprojects {
         jacksonVersion = '2.18.2'
         classPathVersion = '4.8.162'
         nettyVersion = '4.1.117.Final'
-        kryoVersion = '5.5.0'
+        kryoVersion = '5.6.2'
     }
 
     repositories {
