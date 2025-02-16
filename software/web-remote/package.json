@@ -33,7 +33,7 @@
     "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.19.0",
     "eslint-plugin-react": "^7.37.4",
-    "globals": "^15.14.0",
+    "globals": "^15.15.0",
     "identity-obj-proxy": "^3.0.0",
     "rc-joystick": "^1.0.4",
     "source-map-loader": "^5.0.0",
