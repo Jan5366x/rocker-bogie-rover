@@ -1,4 +1,5 @@
 
+previous: [[September 2024]]
 # Week 4
 
 Yes, this is a week counter not the week of the month :D
@@ -43,3 +44,5 @@ private stuff - no progress at all ;-)
 All prepared parts are now printed, so I continue to design the [[CAD]] for the [[Rover]] in [[Fusion 360]].
 
 ![](../Images/2024/Week6_3d_printing.jpg)
+
+# Next: [[February 2025]]

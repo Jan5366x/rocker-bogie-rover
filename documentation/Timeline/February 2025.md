@@ -1,4 +1,4 @@
-
+previous: [[October 2024]]
 ### Supervisor
 ![](../Images/2025-02/IMG_1364.jpg)
 
@@ -11,3 +11,5 @@
 ![](../Images/2025-02/IMG_1373.jpg)
 
 ![](../Images/2025-02/IMG_1374.jpg)
+
+# Next: [[March 2025]]
