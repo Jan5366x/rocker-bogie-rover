@@ -7,16 +7,16 @@ Yes, this is a week counter not the week of the month :D
 ### Wheels
 
 Print of 6 x 8 hour [[TPU]] flex tire parts is finish 3rd Oct.
-![](../Images/Week4_Tire.jpg)
+![](Week4_Tire.jpg)
 
 
 #### Smart Home
 
 I added my [[Prusa MK4]] to the smart home to get a better overview about the current prints.
 
-![](../Images/Week4_smart_home_1.png)
+![](Week4_smart_home_1.png)
 
-![](../Images/Week4_smart_home_2.jpg)
+![](Week4_smart_home_2.jpg)
 
 #### Wheel Core
 Last checks and measurements for the [[PETG]] wheel core before print start are concluded.
@@ -26,11 +26,11 @@ to arrive ~ 15th Oct.
 
 #### Wheel mount
 
-![](../Images/Week4_Wheel_Mount.jpg)
+![](Week4_Wheel_Mount.jpg)
 
 This version was very difficult to print and also directly broke in two pieces, so I made further adjustments:
 
-![](../Images/Week4_Animation.gif)
+![](Week4_Animation.gif)
 
 # Week 5
 
@@ -42,4 +42,4 @@ private stuff - no progress at all ;-)
 
 All prepared parts are now printed so I continue to design the [[CAD]] for the [[Rover]] in [[Fusion 360]].
 
-![](../Images/Week6_3d_printing.jpg)
+![](Week6_3d_printing.jpg)
