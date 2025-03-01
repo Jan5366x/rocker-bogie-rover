@@ -26,11 +26,11 @@ to arrive ~ 15th Oct.
 
 #### Wheel mount
 
-![](Week4_Wheel_Mount.jpg)
+![](../Images/2024/Week4_Wheel_Mount.jpg)
 
 This version was very difficult to print and also directly broke in two pieces, so I made further adjustments:
 
-![](Week4_Animation.gif)
+![](../Images/2024/Week4_Animation.gif)
 
 # Week 5
 
@@ -40,6 +40,6 @@ private stuff - no progress at all ;-)
 
 #### 3D Printing & Design
 
-All prepared parts are now printed so I continue to design the [[CAD]] for the [[Rover]] in [[Fusion 360]].
+All prepared parts are now printed, so I continue to design the [[CAD]] for the [[Rover]] in [[Fusion 360]].
 
-![](Week6_3d_printing.jpg)
+![](../Images/2024/Week6_3d_printing.jpg)

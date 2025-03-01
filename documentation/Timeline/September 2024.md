@@ -19,7 +19,7 @@
 	- So I will use a [[PCA9685PW 16 Channel 12-Bit PWM Servo Shield Driver]] with [[I2C Interface]]
 - A [good friend (K0rmarun)](https://github.com/k0rmarun) also pointed out that I should handle the motor control directly with a microcontroller instead of indirect control via the [[Raspberry PI 4B]] to keep the processing in a realtime manner -> I will follow this advice and only give the [[Arduino Nano V3]] basic commands from the [[Raspberry PI 4B]] like "move in this direction with this speed" and then handle the detailed processing on the micro controller. But I also want to plot this data to [[Grafana]] so maybe there will be at least some feedback back to the [[Raspberry PI 4B]]
 
-![](Week2.jpg)
+![](../Images/2024/Week2.jpg)
 
 ### Wheel mount structure
 - The design is more difficult than expected since the sensor mount adds a lot of 3d complexities, and I'm still a beginner in [[Fusion 360]]
@@ -32,7 +32,7 @@ After some more tests, I have decided to go forward with the current design.
 Sure, there are still some improvements possible in regard to material flex and performance on flat surfaces,
 but it should be good enough for my use cases.
 
-![](Week3_Rover_TPU_Print.jpg)
+![](../Images/2024/Week3_Rover_TPU_Print.jpg)
 
 ### Wheel Mount Structure
 I have moved my workflow back to paper sketches to solve some persisting design problems.
@@ -66,7 +66,7 @@ I Needed some attempts to get the size to be correct because of the complex shap
 The black one is from [wildwillyrobots](https://www.printables.com/model/194299-stair-climbing-rover),
 so my rover is a little bit larger, I guess.
 
-![](Week3_GearDesignTest.jpg)
+![](../Images/2024/Week3_GearDesignTest.jpg)
 _(The gear teeth are just placeholders right now)_
 
 Since my servos are huge, I still keep the option open to rotate the gear/servo assembly by 180°
@@ -76,7 +76,7 @@ But in this case, the design would require some kind of dirt protection to avoid
 -> Yes, I will design it up-side-down
 
 ##### Final spur gear teeth layout
-![](Week3_GearDesign.jpg)
+![](../Images/2024/Week3_GearDesign.jpg)
 
 - Fusion 360 Spur gear add-on script
 - Pressure angle: 20°
@@ -87,5 +87,5 @@ But in this case, the design would require some kind of dirt protection to avoid
 - Gear thickness: 8 mm
 - Backslash: 0 mm
 
-# Next:  [[October 2024]]
+# Next: [[October 2024]]
 
