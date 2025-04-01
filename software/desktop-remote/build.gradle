@@ -33,7 +33,7 @@ allprojects {
         lombokVersion = '1.18.36'
         jsonSimpleVersion = '1.1.1'
         byteBuddyVersion = '1.14.9'
-        junitVersion = '5.11.4'
+        junitVersion = '5.12.1'
         autovalueVersion = '1.6.6'
         autofactoryVersion = '1.0-beta6'
         autoerviceVersion = '1.0-rc6'
