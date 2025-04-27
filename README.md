@@ -7,7 +7,7 @@ Self designed and 3D printed [Rocker Bogie](https://en.wikipedia.org/wiki/Rocker
 
 3D Design of Wheel mounts & 3D Print of tires
 
-![](/documentation/Images/Week4_Animation.gif)
+![](/documentation/Images/2024/Week4_Animation.gif)
 
 _More details: [Current Timeline Entry](/documentation/Timeline/October%202024.md)_
 
