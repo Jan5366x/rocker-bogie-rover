@@ -38,7 +38,7 @@ allprojects {
         autofactoryVersion = '1.0-beta6'
         autoerviceVersion = '1.0-rc6'
         guiceVersion = '4.2.0'
-        jacksonVersion = '2.19.0'
+        jacksonVersion = '2.19.1'
         classPathVersion = '4.8.162'
         nettyVersion = '4.2.1.Final'
     }
