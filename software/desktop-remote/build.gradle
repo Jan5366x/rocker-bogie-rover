@@ -40,7 +40,7 @@ allprojects {
         guiceVersion = '4.2.0'
         jacksonVersion = '2.19.0'
         classPathVersion = '4.8.162'
-        nettyVersion = '4.2.1.Final'
+        nettyVersion = '4.2.3.Final'
     }
 
     repositories {
