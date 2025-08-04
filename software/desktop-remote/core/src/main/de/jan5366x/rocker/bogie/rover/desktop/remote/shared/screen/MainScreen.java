@@ -5,13 +5,17 @@ import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
@@ -27,7 +31,7 @@ import java.util.ArrayList;
 public class MainScreen implements InputProcessor, Screen {
     private static final Logger LOGGER = LogManager.getLogger(MainScreen.class);
     @Getter
-    private BitmapFont font;
+    private final BitmapFont font;
     @Getter
     private final Stage stage;
     @Getter
@@ -41,10 +45,57 @@ public class MainScreen implements InputProcessor, Screen {
     private final InputMultiplexer inputMultiplexer = new InputMultiplexer();
     private final ArrayList<Box> boxes = new ArrayList<>();
 
+    private Table table;
+    Touchpad touchpad;
+
     public MainScreen() {
         viewport = new ScreenViewport();
         stage = new Stage(viewport);
         skin = new Skin(Gdx.files.internal("ui/game-ui.json"));
+
+        table = new Table();
+        table.setFillParent(true);
+        stage.addActor(table);
+
+        table.setDebug(true); //  enables debug lines
+
+        TextButton button = new TextButton("Text Button", skin);
+        table.addActor(button);
+        touchpad = new Touchpad(20, skin);
+        touchpad.setBounds(15, 15, 200, 200);
+        stage.addListener(new InputListener() {
+
+            Vector2 p = new Vector2();
+            Rectangle b = new Rectangle();
+
+            @Override
+            public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
+                if (event.getTarget() != touchpad) {
+                    // If we didn't actually touch the touchpad, set position to our touch point
+                    b.set(touchpad.getX(), touchpad.getY(), touchpad.getWidth(), touchpad.getHeight());
+                    b.setCenter(x, y);
+                    touchpad.setBounds(b.x, b.y, b.width, b.height);
+
+                    // Let the touchpad know to start tracking touch
+                    touchpad.fire(event);
+                }
+                return true;
+            }
+
+            @Override
+            public void touchDragged(InputEvent event, float x, float y, int pointer) {
+                touchpad.stageToLocalCoordinates(p.set(x, y));
+
+            }
+
+            @Override
+            public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
+                // Put the touchpad back to its original position
+                touchpad.clearActions();
+            }
+        });
+        stage.addActor(touchpad);
+
         shapeRenderer = new ShapeRenderer();
         camera = new OrthographicCamera();
 
@@ -99,6 +150,7 @@ public class MainScreen implements InputProcessor, Screen {
 
     @Override
     public void render(float delta) {
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         batch.begin();
         batch.draw(background, 0, 0, viewport.getScreenWidth(), viewport.getScreenHeight());
         font.draw(batch, Gdx.graphics.getFramesPerSecond() + " FPS; Delta " + delta * 1000 + "ms", 0, viewport.getScreenHeight());
@@ -130,7 +182,7 @@ public class MainScreen implements InputProcessor, Screen {
             shapeRenderer.end();
         }
 
-        stage.act();
+        stage.act(Gdx.graphics.getDeltaTime());
         stage.draw();
     }
 
