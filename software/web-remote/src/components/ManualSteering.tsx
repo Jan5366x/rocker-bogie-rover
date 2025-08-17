@@ -2,6 +2,7 @@ import React from "react";
 import {Stack} from "@mui/material";
 import "./Remote.css";
 import ManualSteeringSlider from "./ManualSteeringSlider";
+import SteeringPreview from "./SteeringPreview";
 
 function ManualSteering() {
     return (
@@ -19,6 +20,7 @@ function ManualSteering() {
                     <ManualSteeringSlider />
                 </Stack>
             </Stack>
+            <SteeringPreview />
         </>
     );
 }
