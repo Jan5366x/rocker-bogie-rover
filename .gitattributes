@@ -4,4 +4,6 @@
 *.stl filter=lfs diff=lfs merge=lfs -text
 *.fzz filter=lfs diff=lfs merge=lfs -text
 *.gif filter=lfs diff=lfs merge=lfs -text
+*.blend filter=lfs diff=lfs merge=lfs -text
+*.glb filter=lfs diff=lfs merge=lfs -text
 

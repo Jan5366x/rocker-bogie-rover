@@ -5,11 +5,18 @@ import {Canvas} from "@react-three/fiber"
 import {useGLTF} from "@react-three/drei"
 
 
-function Model() {
-    const modelPath = new URL("/rover-body.glb", import.meta.url).href
-    const gltf = useGLTF(modelPath)
+function BodyModel() {
+    const bodyModelPath = new URL("/rover-body.glb", import.meta.url).href
+    const gltf = useGLTF(bodyModelPath)
     // eslint-disable-next-line react/no-unknown-property
-    return <primitive object={gltf.scene} />
+    return <primitive object={gltf.scene}/>
+}
+
+function WheelModel() {
+    const wheelModelPath = new URL("/rover-wheel.glb", import.meta.url).href
+    const gltf = useGLTF(wheelModelPath)
+    // eslint-disable-next-line react/no-unknown-property
+    return <primitive object={gltf.scene}/>
 }
 
 
@@ -20,9 +27,15 @@ function SteeringPreview() {
             <Canvas
                 camera={{ position: [12, 11, 0], fov: 19.5, near: 1, far: 20 }}
             >
-                <ambientLight />
+                <ambientLight intensity={Math.PI / 2} />
                 <Suspense>
-                    <Model />
+                    <BodyModel />
+                    <WheelModel />
+                    <WheelModel />
+                    <WheelModel />
+                    <WheelModel />
+                    <WheelModel />
+                    <WheelModel />
                 </Suspense>
             </Canvas>
         </Box>

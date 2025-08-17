@@ -1,1 +1,4 @@
 /documentation/.obsidian/
+
+# Ignore blender temp files
+*.blend1
