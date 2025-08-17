@@ -5,13 +5,17 @@ import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
@@ -25,30 +29,120 @@ import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 
 public class MainScreen implements InputProcessor, Screen {
+    public static final String COVE_NERD_FONT_REGULAR_TTF = "ui/fonts/cascadia/CaskaydiaCoveNerdFont-Regular.ttf";
+
     private static final Logger LOGGER = LogManager.getLogger(MainScreen.class);
+
+    private final InputMultiplexer inputMultiplexer = new InputMultiplexer();
     @Getter
-    private BitmapFont font;
+    private final Viewport viewport;
+    private final OrthographicCamera camera;
+    private SpriteBatch batch;
     @Getter
     private final Stage stage;
     @Getter
-    private final Viewport viewport;
+    private BitmapFont font;
     @Getter
-    private final Skin skin;
-    private SpriteBatch batch;
-    private Texture background;
-    private final OrthographicCamera camera;
+    private Skin skin;
+
+    private Table mainTable;
+    private Touchpad movementTouchpad;
+
+
+
     private final ShapeRenderer shapeRenderer;
-    private final InputMultiplexer inputMultiplexer = new InputMultiplexer();
+    private Texture background;
+
     private final ArrayList<Box> boxes = new ArrayList<>();
 
+
+
     public MainScreen() {
+        LOGGER.info("Initializing MainScreen");
+
         viewport = new ScreenViewport();
         stage = new Stage(viewport);
-        skin = new Skin(Gdx.files.internal("ui/game-ui.json"));
+
+        setupSkinAndFont();
+
+        mainTable = new Table();
+        mainTable.setFillParent(true);
+        stage.addActor(mainTable);
+
+        mainTable.setDebug(true); //  enables debug lines
+
+        TextButton button = new TextButton("Text Button", skin);
+        mainTable.addActor(button);
+        movementTouchpad = new Touchpad(20, skin);
+        movementTouchpad.setBounds(15, 15, 200, 200);
+
+        stage.addListener(new InputListener() {
+
+            Vector2 p = new Vector2();
+            Rectangle b = new Rectangle();
+
+            @Override
+            public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
+                if (event.getTarget() != movementTouchpad) {
+                    // If we didn't actually touch the touchpad, set position to our touch point
+                    b.set(movementTouchpad.getX(), movementTouchpad.getY(), movementTouchpad.getWidth(), movementTouchpad.getHeight());
+                    b.setCenter(x, y);
+                    movementTouchpad.setBounds(b.x, b.y, b.width, b.height);
+
+                    // Let the touchpad know to start tracking touch
+                    movementTouchpad.fire(event);
+                }
+                return true;
+            }
+
+            @Override
+            public void touchDragged(InputEvent event, float x, float y, int pointer) {
+                movementTouchpad.stageToLocalCoordinates(p.set(x, y));
+            }
+
+            @Override
+            public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
+                // Put the touchpad back to its original position
+                movementTouchpad.clearActions();
+            }
+        });
+        stage.addActor(movementTouchpad);
+
         shapeRenderer = new ShapeRenderer();
         camera = new OrthographicCamera();
 
-        FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal("ui/fonts/cascadia/CaskaydiaCoveNerdFont-Regular.ttf"));
+        Gdx.input.setInputProcessor(stage);
+
+        createBackground();
+
+        // begin layout
+        var root = new Table();
+        root.setSize(300, 500);
+        stage.addActor(root);
+
+        inputMultiplexer.addProcessor(stage);
+        inputMultiplexer.addProcessor(this);
+        Gdx.input.setInputProcessor(inputMultiplexer);
+
+        setupTestBoxes();
+
+        LOGGER.info("MainScreen initialized");
+    }
+
+    private void setupTestBoxes() {
+        boxes.add(new Box(100.0F, 100.0F, 30.0F, 60.0F, -30.0F, Color.CYAN));
+        boxes.add(new Box(100.0F, 250.0F, 30.0F, 60.0F, 0.0F, Color.CYAN));
+        boxes.add(new Box(100.0F, 400.0F, 30.0F, 60.0F, 30.0F, Color.CYAN));
+        boxes.add(new Box(350.0F, 100.0F, 30.0F, 60.0F, -30.0F, Color.CYAN));
+        boxes.add(new Box(350.0F, 250.0F, 30.0F, 60.0F, 0.0F, Color.CYAN));
+        boxes.add(new Box(350.0F, 400.0F, 30.0F, 60.0F, 30.0F, Color.CYAN));
+        boxes.add(new Box(150.0F, 140.0F, 180.0F, 300.0F, 0.0F, Color.CYAN));
+    }
+
+    private  void setupSkinAndFont() {
+        LOGGER.info("Setting up Skin and Font");
+        skin = new Skin(Gdx.files.internal("ui/game-ui.json"));
+        FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal(COVE_NERD_FONT_REGULAR_TTF));
         FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameter.size = 14;
         parameter.borderWidth = 0;
@@ -68,37 +162,17 @@ public class MainScreen implements InputProcessor, Screen {
         skin.get(List.ListStyle.class).font = font;
         skin.get(TextField.TextFieldStyle.class).font = font;
         skin.get(Window.WindowStyle.class).titleFont = font;
-
-        Gdx.input.setInputProcessor(stage);
-
-        createBackground();
-
-        // begin layout
-        var root = new Table();
-        root.setSize(300, 500);
-        stage.addActor(root);
-
-        inputMultiplexer.addProcessor(stage);
-        inputMultiplexer.addProcessor(this);
-        Gdx.input.setInputProcessor(inputMultiplexer);
-
-        // Test boxes
-        boxes.add(new Box(100.0F, 100.0F, 30.0F, 60.0F, -30.0F, Color.CYAN));
-        boxes.add(new Box(100.0F, 250.0F, 30.0F, 60.0F, 0.0F, Color.CYAN));
-        boxes.add(new Box(100.0F, 400.0F, 30.0F, 60.0F, 30.0F, Color.CYAN));
-        boxes.add(new Box(350.0F, 100.0F, 30.0F, 60.0F, -30.0F, Color.CYAN));
-        boxes.add(new Box(350.0F, 250.0F, 30.0F, 60.0F, 0.0F, Color.CYAN));
-        boxes.add(new Box(350.0F, 400.0F, 30.0F, 60.0F, 30.0F, Color.CYAN));
-        boxes.add(new Box(150.0F, 140.0F, 180.0F, 300.0F, 0.0F, Color.CYAN));
+        LOGGER.info("Skin and Font created");
     }
 
     @Override
     public void show() {
-
+        LOGGER.info("Show MainScreen");
     }
 
     @Override
     public void render(float delta) {
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         batch.begin();
         batch.draw(background, 0, 0, viewport.getScreenWidth(), viewport.getScreenHeight());
         font.draw(batch, Gdx.graphics.getFramesPerSecond() + " FPS; Delta " + delta * 1000 + "ms", 0, viewport.getScreenHeight());
@@ -130,7 +204,7 @@ public class MainScreen implements InputProcessor, Screen {
             shapeRenderer.end();
         }
 
-        stage.act();
+        stage.act(Gdx.graphics.getDeltaTime());
         stage.draw();
     }
 
@@ -146,27 +220,29 @@ public class MainScreen implements InputProcessor, Screen {
 
     @Override
     public void pause() {
-
+        LOGGER.info("Paused");
     }
 
     @Override
     public void resume() {
-
+        LOGGER.info("Resumed");
     }
 
     @Override
     public void hide() {
-
+        LOGGER.info("Hide MainScreen");
     }
 
     @Override
     public void dispose() {
+        LOGGER.info("Start dispose");
         batch.dispose();
         background.dispose();
         stage.dispose();
         skin.dispose();
         font.dispose();
         shapeRenderer.dispose();
+        LOGGER.info("Dispose finished");
     }
 
 
