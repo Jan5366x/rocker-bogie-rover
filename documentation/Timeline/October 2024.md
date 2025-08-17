@@ -15,9 +15,9 @@ Print of 6 x 8 hour [[TPU]] flex tire parts is finish 3rd Oct.
 
 I added my [[Prusa MK4]] to the smart home to get a better overview about the current prints.
 
-![](Week4_smart_home_1.png)
+![](../Images/2024/Week4_smart_home_1.png)
 
-![](Week4_smart_home_2.jpg)
+![](../Images/2024/Week4_smart_home_2.jpg)
 
 #### Wheel Core
 Last checks and measurements for the [[PETG]] wheel core before print start are concluded.
