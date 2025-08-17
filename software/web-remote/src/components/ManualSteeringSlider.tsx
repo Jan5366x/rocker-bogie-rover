@@ -3,12 +3,20 @@ import {Box, Grid, Input, Slider, Typography} from "@mui/material";
 import "./Remote.css";
 import RotateLeftIcon from "@mui/icons-material/RotateLeft";
 
-function ManualSteering() {
+
+interface ManualSteeringProps {
+    text: string;
+}
+
+function ManualSteering(props: ManualSteeringProps) {
     const valueMin = -90;
     const valueMax = 90;
     const valueDefault= 0;
     const valueFallback = 0;
     const [value, setValue] = React.useState(valueDefault);
+
+    // TODO slider mark could be used to show the current steering angle of the rover since it will be delayed due to physical movement and lerping
+    const marks = [{value: 0}];
 
     const handleSliderChange = (event: Event, newValue: number) => {
         setValue(newValue);
@@ -29,7 +37,7 @@ function ManualSteering() {
     return (
         <Box sx={{ width: 250 }}>
             <Typography id="input-slider" gutterBottom>
-                Text
+                {props.text}
             </Typography>
             <Grid container spacing={2} sx={{ alignItems: "center" }}>
                 <Grid>
@@ -44,6 +52,8 @@ function ManualSteering() {
                         max={valueMax}
                         defaultValue={valueDefault}
                         track={false}
+                        valueLabelDisplay="auto"
+                        marks={marks}
                     />
                 </Grid>
                 <Grid>

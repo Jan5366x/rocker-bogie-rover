@@ -19,14 +19,13 @@ function WheelModel() {
     return <primitive object={gltf.scene}/>
 }
 
-
 function SteeringPreview() {
-
     return (
         <Box width={600} height={600}>
             <Canvas
                 camera={{ position: [12, 11, 0], fov: 19.5, near: 1, far: 20 }}
             >
+                {/* eslint-disable-next-line react/no-unknown-property */}
                 <ambientLight intensity={Math.PI / 2} />
                 <Suspense>
                     <BodyModel />
