@@ -15,8 +15,6 @@
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "@types/react-router-dom": "^5.3.3",
-    "three": "^0.179.1",
-    "drei": "^2.2.21",
     "js-cookie": "^3.0.5",
     "luxon": "^3.7.1",
     "react": "^19.1.1",
