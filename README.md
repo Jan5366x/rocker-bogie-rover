@@ -7,7 +7,7 @@ Self designed and 3D printed [Rocker Bogie](https://en.wikipedia.org/wiki/Rocker
 
 ### Software
 Prototyping with Unity3D
-![](/documentation/Images/Unity3D-Playground.png)
+![](/documentation/Images/Unity3D-Playground2.png)
 
 ### 3D Work
 3D Design of Wheel mounts & 3D Print of tires
