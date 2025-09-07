@@ -49,6 +49,7 @@
     <Compile Include="Assets/Scripts/RoverMovement.cs" />
     <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
     <Compile Include="Assets/Scripts/RockerBogieSuspensionLinesScript.cs" />
+    <Compile Include="Assets/Scripts/RoverWaypoint.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/home/jan5366x/Unity/Hub/Editor/6000.2.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -404,22 +405,22 @@
       <HintPath>/home/jan5366x/Unity/Hub/Editor/6000.2.2f1/Editor/Data/Managed/UnityEngine/UnityEditor.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections.LowLevel.ILSupport">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/PackageCache/com.unity.collections@d49facba0036/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/PackageCache/com.unity.collections@d49facba0036/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/PackageCache/com.unity.ext.nunit@b16e6d09cd93/net40/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/PackageCache/com.unity.ext.nunit@b16e6d09cd93/net40/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Hashing">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/PackageCache/com.unity.collections@d49facba0036/Unity.Collections.Tests/System.IO.Hashing/System.IO.Hashing.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/PackageCache/com.unity.collections@d49facba0036/Unity.Collections.Tests/System.IO.Hashing/System.IO.Hashing.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/PackageCache/com.unity.visualscripting@6279e2b7c485/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/PackageCache/com.unity.visualscripting@6279e2b7c485/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/PackageCache/com.unity.nuget.mono-cecil@d78732e851eb/Mono.Cecil.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/PackageCache/com.unity.nuget.mono-cecil@d78732e851eb/Mono.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/PackageCache/com.unity.collections@d49facba0036/Unity.Collections.Tests/System.Runtime.CompilerServices.Unsafe/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/PackageCache/com.unity.collections@d49facba0036/Unity.Collections.Tests/System.Runtime.CompilerServices.Unsafe/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/home/jan5366x/Unity/Hub/Editor/6000.2.2f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -791,160 +792,160 @@
       <HintPath>/home/jan5366x/Unity/Hub/Editor/6000.2.2f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Navigation">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.AI.Navigation.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.AI.Navigation.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Navigation.Updater">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Navigation.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="PPv2URPConverters">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/PPv2URPConverters.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/PPv2URPConverters.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime.Shared">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Shared.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Shared.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Searcher.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rendering.LightTransport.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.Rendering.LightTransport.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Rendering.LightTransport.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.SysrootPackage.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.SysrootPackage.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.SysrootPackage.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Sysroot.Linux_x86_64">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.Sysroot.Linux_x86_64.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Sysroot.Linux_x86_64.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem.ForUI">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.InputSystem.ForUI.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.InputSystem.ForUI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.GPUDriven.Runtime">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Multiplayer.Center.Common">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.Multiplayer.Center.Common.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Multiplayer.Center.Common.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Multiplayer.Center.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rendering.LightTransport.Runtime">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.Rendering.LightTransport.Runtime.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Rendering.LightTransport.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Toolchain.Linux-x86_64">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.Toolchain.Linux-x86_64.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Toolchain.Linux-x86_64.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.Collections.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Collections.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>/home/jan5366x/RoverPlayground/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
