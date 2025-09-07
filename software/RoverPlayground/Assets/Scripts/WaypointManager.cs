@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.Splines;
 
 [ExecuteInEditMode]
 public class WaypointManager : MonoBehaviour
 {
-    private RoverWaypoint[] waypoints;
-    private int childCount;
+    private RoverWaypoint[] _waypoints;
+    private int _childCount;
+    private SplineContainer _splineContainer;
     
     void Awake()
     {
@@ -13,27 +15,33 @@ public class WaypointManager : MonoBehaviour
 
     void Update()
     {
+        _splineContainer = transform.GetComponentInChildren<SplineContainer>();
         // Reload waypoints if the number of children has changed
-        if (childCount != transform.childCount)
+        if (_childCount != transform.childCount)
         {
             ReloadWaypoints();
-            childCount = transform.childCount;
+            _childCount = transform.childCount;
         }
         
         // Draw debug lines between waypoints
         RoverWaypoint lastWaypoint = null;
-        foreach (var roverWaypoint in waypoints)
+        _splineContainer.Splines[0].Clear();
+        foreach (var roverWaypoint in _waypoints)
         {
+            var bezierKnot = new BezierKnot(roverWaypoint.transform.position);
+            _splineContainer.Splines[0].Add(bezierKnot);
             if (lastWaypoint)
             {
                 Debug.DrawLine(lastWaypoint.transform.position, roverWaypoint.transform.position, Color.aquamarine);
             }
             lastWaypoint = roverWaypoint;
         }
+        _splineContainer.Splines[0].SetTangentMode(TangentMode.AutoSmooth);
     }
 
     private void ReloadWaypoints()
     { 
-        waypoints = transform.GetComponentsInChildren<RoverWaypoint>();
+       
+        _waypoints = transform.GetComponentsInChildren<RoverWaypoint>();
     }
 }

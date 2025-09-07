@@ -807,6 +807,9 @@
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Splines.Editor">
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Splines.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
       <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
@@ -944,6 +947,12 @@
     </Reference>
     <Reference Include="Unity.InputSystem">
       <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Settings.Editor">
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Settings.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Splines">
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Splines.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>

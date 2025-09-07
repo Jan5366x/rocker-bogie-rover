@@ -7,6 +7,7 @@
     "com.unity.inputsystem": "1.14.2",
     "com.unity.multiplayer.center": "1.0.0",
     "com.unity.render-pipelines.universal": "17.2.0",
+    "com.unity.splines": "2.8.1",
     "com.unity.test-framework": "1.5.1",
     "com.unity.timeline": "1.8.9",
     "com.unity.toolchain.linux-x86_64": "2.0.10",
