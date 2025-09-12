@@ -933,14 +933,14 @@
     <Reference Include="Unity.Toolchain.Linux-x86_64">
       <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Toolchain.Linux-x86_64.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Collections.Editor">
       <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.Collections.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
       <HintPath>/home/jan5366x/IdeaProjects/rocker-bogie-rover/software/RoverPlayground/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>

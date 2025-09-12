@@ -7,14 +7,15 @@ public class RoverMovement : MonoBehaviour
     public Vector3 centerOfTurningCircle;
     public Vector3 targetPosition;
     
-    private Transform steeringAxleFrontRight;
-    private Transform steeringAxleMiddleRight;
-    private Transform steeringAxleBackRight;
+    private Transform _steeringAxleFrontRight;
+    private Transform _steeringAxleMiddleRight;
+    private Transform _steeringAxleBackRight;
 
-    private Transform steeringAxleFrontLeft;
-    private Transform steeringAxleMiddleLeft;
-    private Transform steeringAxleBackLeft;
+    private Transform _steeringAxleFrontLeft;
+    private Transform _steeringAxleMiddleLeft;
+    private Transform _steeringAxleBackLeft;
     
+    private float _wheelBase;
 
     void Start()
     {
@@ -28,14 +29,14 @@ public class RoverMovement : MonoBehaviour
 
     private void FindSteeringAxles()
     {
-        steeringAxleFrontRight = transform.Find("RightRocker/Bogie/steering axle front");
-        steeringAxleFrontLeft = transform.Find("LeftRocker/Bogie/steering axle front");
+        _steeringAxleFrontRight = transform.Find("RightRocker/Bogie/steering axle front");
+        _steeringAxleFrontLeft = transform.Find("LeftRocker/Bogie/steering axle front");
         
-        steeringAxleMiddleRight = transform.Find("RightRocker/Bogie/steering axle middle");
-        steeringAxleMiddleLeft = transform.Find("LeftRocker/Bogie/steering axle middle");
+        _steeringAxleMiddleRight = transform.Find("RightRocker/Bogie/steering axle middle");
+        _steeringAxleMiddleLeft = transform.Find("LeftRocker/Bogie/steering axle middle");
 
-        steeringAxleBackRight = transform.Find("RightRocker/steering axle back");
-        steeringAxleBackLeft = transform.Find("LeftRocker/steering axle back");
+        _steeringAxleBackRight = transform.Find("RightRocker/steering axle back");
+        _steeringAxleBackLeft = transform.Find("LeftRocker/steering axle back");
     }
 
 
@@ -46,12 +47,12 @@ public class RoverMovement : MonoBehaviour
 
         FindSteeringAxles();
         
-        Debug.DrawLine(new Vector3(steeringAxleFrontRight.position.x, 0f, steeringAxleFrontRight.position.z) , centerOfTurningCircle, Color.darkOrange);
-        Debug.DrawLine(new Vector3(steeringAxleFrontLeft.position.x, 0f, steeringAxleFrontLeft.position.z) , centerOfTurningCircle, Color.yellow);
-        Debug.DrawLine(new Vector3(steeringAxleMiddleRight.position.x, 0f, steeringAxleMiddleRight.position.z) , centerOfTurningCircle, Color.darkOrange);
-        Debug.DrawLine(new Vector3(steeringAxleMiddleLeft.position.x, 0f, steeringAxleMiddleLeft.position.z) , centerOfTurningCircle, Color.yellow);
-        Debug.DrawLine(new Vector3(steeringAxleBackRight.position.x, 0f, steeringAxleBackRight.position.z) , centerOfTurningCircle, Color.darkOrange);
-        Debug.DrawLine(new Vector3(steeringAxleBackLeft.position.x, 0f, steeringAxleBackLeft.position.z) , centerOfTurningCircle, Color.yellow);
+        Debug.DrawLine(new Vector3(_steeringAxleFrontRight.position.x, 0f, _steeringAxleFrontRight.position.z) , centerOfTurningCircle, Color.darkOrange);
+        Debug.DrawLine(new Vector3(_steeringAxleFrontLeft.position.x, 0f, _steeringAxleFrontLeft.position.z) , centerOfTurningCircle, Color.yellow);
+        Debug.DrawLine(new Vector3(_steeringAxleMiddleRight.position.x, 0f, _steeringAxleMiddleRight.position.z) , centerOfTurningCircle, Color.darkOrange);
+        Debug.DrawLine(new Vector3(_steeringAxleMiddleLeft.position.x, 0f, _steeringAxleMiddleLeft.position.z) , centerOfTurningCircle, Color.yellow);
+        Debug.DrawLine(new Vector3(_steeringAxleBackRight.position.x, 0f, _steeringAxleBackRight.position.z) , centerOfTurningCircle, Color.darkOrange);
+        Debug.DrawLine(new Vector3(_steeringAxleBackLeft.position.x, 0f, _steeringAxleBackLeft.position.z) , centerOfTurningCircle, Color.yellow);
         
         
         // Remove these placeholder lines
@@ -60,7 +61,16 @@ public class RoverMovement : MonoBehaviour
         DebugDrawCircle(centerOfTurningCircle, 12f, 100, Color.yellow);
         DebugDrawCircle(centerOfTurningCircle - Vector3.right , 14f, 100, Color.yellow);
     }
+
     
+    // Turning Radius = (Wheelbase / sin(average steering angle)) + (track width / 2)
+    
+    
+    public static float TurningRadius(float wheelBase, float trackWidth)
+    {
+        return wheelBase / 2f + trackWidth / 2f;
+    }
+
     public static void DebugDrawCircle(Vector3 position, float radius, int segments, Color color)
     {
         if (radius <= 0.0f || segments <= 0)
@@ -92,11 +102,11 @@ public class RoverMovement : MonoBehaviour
         }
     }
     
-    public static Tuple<Vector2, float> circleFromThreePoints(Vector2 point1, Vector2 point2, Vector2 point3) {
-        return circleFromThreePoints(point1.x, point1.y, point2.x, point2.y,  point3.x, point3.y);
+    public static Tuple<Vector2, float> CircleFromThreePoints(Vector2 point1, Vector2 point2, Vector2 point3) {
+        return CircleFromThreePoints(point1.x, point1.y, point2.x, point2.y,  point3.x, point3.y);
     }
 
-    public static Tuple<Vector2, float> circleFromThreePoints(float x1, float y1, float x2, float y2, float x3, float y3) {
+    public static Tuple<Vector2, float> CircleFromThreePoints(float x1, float y1, float x2, float y2, float x3, float y3) {
         var x12 = x1 - x2;
         var x13 = x1 - x3;
         var y12 = y1 - y2;
