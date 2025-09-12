@@ -61,15 +61,12 @@ public class RoverMovement : MonoBehaviour
         DebugDrawCircle(centerOfTurningCircle, 12f, 100, Color.yellow);
         DebugDrawCircle(centerOfTurningCircle - Vector3.right , 14f, 100, Color.yellow);
     }
+    
+    public static float TurningRadiusAverageSteeringAngle(float wheelBase, float trackWidth, float averageSteeringAngle) 
+        => wheelBase / MathF.Sin(averageSteeringAngle) + trackWidth / 2f;
 
-    
-    // Turning Radius = (Wheelbase / sin(average steering angle)) + (track width / 2)
-    
-    
-    public static float TurningRadius(float wheelBase, float trackWidth)
-    {
-        return wheelBase / 2f + trackWidth / 2f;
-    }
+    public static float TurningRadiusTrack(float wheelBase, float trackWidth) 
+        => wheelBase / 2f + trackWidth / 2f;
 
     public static void DebugDrawCircle(Vector3 position, float radius, int segments, Color color)
     {
