@@ -348,7 +348,7 @@ Transform:
   m_GameObject: {fileID: 178390604}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -40.14, y: 0, z: 22.13}
+  m_LocalPosition: {x: -40.14, y: 0, z: 26.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -754,35 +754,35 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -4.5942173
+        z: -4.7476206
       TangentOut:
         x: 0
         y: 0
-        z: 3.8619199
+        z: 4.5764627
       Rotation:
         value:
           x: 0
-          y: -0.53372735
+          y: -0.47707266
           z: -0
-          w: 0.8456567
+          w: 0.8788639
     - Position:
         x: -40.14
         y: 0
-        z: 22.13
+        z: 26.89
       TangentIn:
         x: -0
         y: -0
-        z: -1.0935483
+        z: -1.4380124
       TangentOut:
         x: 0
         y: 0
-        z: 1.0935483
+        z: 1.4380124
       Rotation:
         value:
           x: 0
-          y: -0.43588996
+          y: -0.31424794
           z: -0
-          w: 0.90000004
+          w: 0.94934094
     m_MetaData:
     - Mode: 0
       Tension: 0.5
