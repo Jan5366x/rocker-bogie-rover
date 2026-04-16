@@ -29,7 +29,7 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",
-    "@types/node": "^25.2.2",
+    "@types/node": "^25.3.3",
     "@types/react-animate-on-scroll": "^2.1.8",
     "@types/three": "^0.183.1",
     "@vitejs/plugin-react": "^5.1.3",
