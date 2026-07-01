@@ -29,7 +29,7 @@ allprojects {
         aiVersion = '1.8.2'
         gdxControllersVersion = '2.2.1'
         log4jVersion = '2.25.4'
-        visuiVersion = '1.5.8'
+        visuiVersion = '1.5.9'
         lombokVersion = '1.18.46'
         jsonSimpleVersion = '1.1.1'
         byteBuddyVersion = '1.14.9'
