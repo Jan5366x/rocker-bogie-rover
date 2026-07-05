@@ -87,5 +87,5 @@ But in this case, the design would require some kind of dirt protection to avoid
 - Gear thickness: 8 mm
 - Backslash: 0 mm
 
-# Next: [[October 2024]]
+# Next: [[2024 10 October]]
 

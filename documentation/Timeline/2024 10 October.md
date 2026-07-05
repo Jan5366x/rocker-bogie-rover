@@ -1,5 +1,5 @@
 
-previous: [[September 2024]]
+previous: [[2024 09 September]]
 # Week 4
 
 Yes, this is a week counter not the week of the month :D
@@ -45,4 +45,4 @@ All prepared parts are now printed, so I continue to design the [[CAD]] for the 
 
 ![](../Images/2024/Week6_3d_printing.jpg)
 
-# Next: [[February 2025]]
+# Next: [[2025 02 February]]
