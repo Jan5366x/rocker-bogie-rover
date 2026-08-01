@@ -40,7 +40,7 @@
     "eslint-plugin-react": "^7.37.5",
     "globals": "^17.7.0",
     "identity-obj-proxy": "^3.0.0",
-    "rc-joystick": "^1.1.1",
+    "rc-joystick": "^1.2.0",
     "source-map-loader": "^5.0.0",
     "ts-loader": "^9.6.2",
     "ts-node": "^10.9.2",
